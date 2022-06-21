@@ -1,2 +1,9 @@
 @import "./header";
 @import "./mixin";
+
+@media screen and (min-width: 959px) {
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+}
