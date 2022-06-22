@@ -94,6 +94,59 @@ ul {
   }
 }
 @media screen and (min-width: 959px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 6rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+  main section {
+    margin-top: 4rem;
+    flex-basis: 55%;
+  }
+
+  .main1 {
+    flex-basis: 40%;
+  }
+}
+@media screen and (min-width: 959px) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: right;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .display {
+    width: 23rem;
+    height: 24rem;
+    border: 2px solid red;
+  }
+
+  .thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 23rem;
+  }
+
+  .thumbnail {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0;
+  }
+
+  .b-radius {
+    border-radius: 1rem;
+    max-width: 100%;
+    min-height: 100%;
+  }
+}
+@media screen and (min-width: 959px) {
   body {
     width: 80%;
     margin: 0 auto;
