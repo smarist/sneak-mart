@@ -29,7 +29,14 @@
 }
 
 .thumbnail{
-    
+    &:active{
+        border: 3px solid $paleOrange;
+        border-radius: 15px;
+    }
+    &:hover{
+        border: 3px solid $colorOrange;
+        border-radius: 15px;
+    }
 }
 
 .b-radius{

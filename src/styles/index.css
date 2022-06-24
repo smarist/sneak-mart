@@ -213,6 +213,15 @@ main .main1 {
   display: none;
 }
 
+.thumbnail:active {
+  border: 3px solid hsl(25deg, 100%, 94%);
+  border-radius: 15px;
+}
+.thumbnail:hover {
+  border: 3px solid hsl(26deg, 100%, 55%);
+  border-radius: 15px;
+}
+
 .b-radius {
   max-width: 100%;
   min-height: 100%;

@@ -15,6 +15,7 @@ import next from "../images/icon-next.svg"
 export default function Slider() {
   const [arraySneakers, setArraySneakers] = useState({
     index: 0,
+    thumb: [thumbnail1, thumbnail2, thumbnail3, thumbnail4],
     images: [sneaker1, sneaker2, sneaker3, sneaker4],
   }
   )
@@ -38,6 +39,33 @@ export default function Slider() {
     }
   }
 
+  const thumb1 = () => {
+    console.log("first")
+    setArraySneakers({ ...arraySneakers, index: 0})
+  }
+ 
+  const thumb2 = () => {
+    console.log("second")
+    setArraySneakers({ ...arraySneakers, index: 1})
+  }
+
+  const thumb3 = () => {
+    console.log("third")
+    setArraySneakers({ ...arraySneakers, index: 2})
+
+  }
+
+  const thumb4 = () => {
+    console.log("fourth")
+    setArraySneakers({ ...arraySneakers, index: 3})
+
+  }
+
+
+
+  
+
+
   return (
     <div className='slider'>
         <div className='display'>
@@ -50,19 +78,19 @@ export default function Slider() {
         
         <div className='thumbnails'>
             <figure className='thumbnail'>
-               <img src={thumbnail1} alt="sneakers" className='b-radius'/> 
+               <img src={thumbnail1} alt="sneakers" className='b-radius' onClick={thumb1}/> 
             </figure>
 
             <figure className='thumbnail'>
-               <img src={thumbnail2} alt="sneakers" className='b-radius'/> 
+               <img src={thumbnail2} alt="sneakers" className='b-radius' onClick={thumb2}/> 
             </figure>
 
             <figure className='thumbnail'>
-               <img src={thumbnail3} alt="sneakers" className='b-radius'/> 
+               <img src={thumbnail3} alt="sneakers" className='b-radius' onClick={thumb3}/> 
             </figure>
 
             <figure className='thumbnail'>
-               <img src={thumbnail4} alt="sneakers" className='b-radius'/> 
+               <img src={thumbnail4} alt="sneakers" className='b-radius' onClick={thumb4}/> 
             </figure>
             
         </div>    
