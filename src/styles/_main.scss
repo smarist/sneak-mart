@@ -1,12 +1,50 @@
 @import "./mixin";
+@import "./variables";
+
+
+main{
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+    margin-left: 0;
+
+    section{
+        @include flex(column);
+        h3{
+            color: $colorOrange;
+            word-spacing: 0.5rem;
+
+        }
+        h1{
+            font-size: 2rem;
+            margin: 0;
+            width: 26rem;
+            word-spacing: 0.3rem;
+
+        }
+        p{
+            font-size: 1rem;
+            width: auto;
+            line-height: 1.3rem;
+            word-spacing: 0.3rem;
+        }
+    }
+
+.main1{
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+}
 
 @media screen and (min-width: 959px) {
 main{
     @include flex(row);
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 6rem;
     width: 85%;
     margin: 0 auto;
+    margin-top: 3rem;
     section{
         margin-top: 4rem;
         flex-basis: 55%;
@@ -14,7 +52,31 @@ main{
 }
 
 .main1{
-    flex-basis: 40%;
+    flex-basis: 35%;
+    border: 2px solid black;
 }
+
+section{
+    @include flex(column);
+    h3{
+        color: $colorOrange;
+        word-spacing: 0.5rem;
+
+    }
+    h1{
+        font-size: 2.3rem;
+        margin: 0;
+        width: 26rem;
+        word-spacing: 0.5rem;
+
+    }
+    p{
+        font-size: 1.2rem;
+        width: 80%;
+        line-height: 1.4rem;
+        word-spacing: 0.5rem;
+    }
+}
+
 
 }

@@ -2,10 +2,30 @@
 @import "./mixin";
 @import "./main";
 @import "./slider";
+@import "./variables";
 
-@media screen and (min-width: 959px) {
+*{
+    box-sizing: border-box;
+}
+button{
+    background: $colorOrange;
+}
+
+body{
+    width: 100%;
+    border: 2px solid red;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+
+
+@media screen and (min-width: 959npx) {
 body{
     width: 80%;
     margin: 0 auto;
 }
+
+
+
 }

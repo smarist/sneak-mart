@@ -4,6 +4,7 @@ import minus from "../images/icon-minus.svg"
 import plus from "../images/icon-plus.svg"
 import cart from "../images/icon-cart.svg"
 
+
 export default function Main() {
   return (
     <main>

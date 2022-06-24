@@ -1,8 +1,16 @@
 @import "./mixin";
+@import "./variables";
+
 
 header{
     width: 100%;
-    margin-top: 0;
+    margin: 0 auto;
+    margin-right: 0;
+}
+
+nav{
+    width: 100%;
+    border: 2px solid green;
 }
 
 li{
@@ -12,8 +20,8 @@ li{
 
 .f-row{
     @include flex(row);
-    gap: auto;
     width: 100%;
+   
     
 }
 
@@ -28,12 +36,25 @@ li{
 }
 
 .cart-avatar{
+    @include flex(row);
     justify-content: space-between;
-    flex-basis: 20%;
+    flex-basis: 10%;
+    border:2px solid red;
+    margin: 0;
+    margin-right: auto;
+
+    li{
+        @include flex(row);
+        border:2px solid red;
+        align-self: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
 }
 
 .menu-ul{
-    flex-basis: 80%;
+    flex-basis: 70%;
 }
 
 ul{
