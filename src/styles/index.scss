@@ -9,6 +9,7 @@
 }
 button{
     background: $colorOrange;
+    border: none;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
 
 
 
-@media screen and (min-width: 959npx) {
+@media screen and (min-width: 959px) {
 body{
     width: 80%;
     margin: 0 auto;

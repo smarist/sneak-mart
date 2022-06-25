@@ -133,16 +133,103 @@ main section h1 {
 }
 main section p {
   font-size: 1rem;
-  width: auto;
   line-height: 1.3rem;
   word-spacing: 0.3rem;
 }
-main .main1 {
+
+.main1 {
   width: 100%;
   margin: 0 auto;
   border: 2px solid red;
 }
 
+.main2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.new-price {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 40%;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  flex-basis: 40%;
+}
+
+.percentage {
+  color: hsl(26deg, 100%, 55%);
+  border-radius: 3px;
+  background: hsl(25deg, 100%, 94%);
+  font-weight: 600;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  flex-basis: 20%;
+  padding: 0.1rem;
+  padding-left: 0.5rem;
+}
+
+.prev-price {
+  color: grey;
+  flex-basis: 10%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.qty-btn {
+  margin-top: 2rem;
+  background: hsl(223deg, 64%, 98%);
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.cart-btn {
+  color: white;
+  border-radius: 5px;
+}
+
+.cart-img {
+  color: white;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 959px) {
+  .prev-price {
+    color: grey;
+    align-self: center;
+  }
+
+  .cart-btn {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cart-txt {
+    margin-top: 0.2em;
+    margin-left: 0.3rem;
+  }
+}
 @media screen and (min-width: 959px) {
   main {
     display: flex;
@@ -178,10 +265,58 @@ main .main1 {
     word-spacing: 0.5rem;
   }
   section p {
-    font-size: 1.2rem;
-    width: 80%;
+    width: 70%;
+    border: 2px solid red;
+    font-size: 2rem;
     line-height: 1.4rem;
     word-spacing: 0.5rem;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .new-price {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+    border: 2px solid red;
+  }
+
+  .percentage {
+    color: hsl(26deg, 100%, 55%);
+    background: hsl(25deg, 100%, 94%);
+  }
+
+  .prev-price {
+    align-self: none;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .qty-btn {
+    flex-basis: 30%;
+    height: 40px;
+  }
+
+  .cart-btn {
+    flex-basis: 60%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    margin-top: auto;
+  }
+
+  .cart-img {
+    margin: 0;
+    padding: 0;
   }
 }
 .slider {
@@ -214,7 +349,6 @@ main .main1 {
 }
 
 .thumbnail:active {
-  border: 3px solid hsl(25deg, 100%, 94%);
   border-radius: 15px;
 }
 .thumbnail:hover {
@@ -303,6 +437,7 @@ main .main1 {
 
 button {
   background: hsl(26deg, 100%, 55%);
+  border: none;
 }
 
 body {
@@ -312,7 +447,7 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (min-width: 959npx) {
+@media screen and (min-width: 959px) {
   body {
     width: 80%;
     margin: 0 auto;

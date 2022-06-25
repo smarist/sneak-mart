@@ -15,7 +15,6 @@ import next from "../images/icon-next.svg"
 export default function Slider() {
   const [arraySneakers, setArraySneakers] = useState({
     index: 0,
-    thumb: [thumbnail1, thumbnail2, thumbnail3, thumbnail4],
     images: [sneaker1, sneaker2, sneaker3, sneaker4],
   }
   )
@@ -31,7 +30,6 @@ export default function Slider() {
   }
 
   const prevSlide = () => {
-    console.log("prev")
     if (arraySneakers.index === 0) {
       return setArraySneakers({ ...arraySneakers, index: arraySneakers.images.length - 1 });
     } else {
@@ -40,23 +38,19 @@ export default function Slider() {
   }
 
   const thumb1 = () => {
-    console.log("first")
     setArraySneakers({ ...arraySneakers, index: 0})
   }
  
   const thumb2 = () => {
-    console.log("second")
     setArraySneakers({ ...arraySneakers, index: 1})
   }
 
   const thumb3 = () => {
-    console.log("third")
     setArraySneakers({ ...arraySneakers, index: 2})
 
   }
 
   const thumb4 = () => {
-    console.log("fourth")
     setArraySneakers({ ...arraySneakers, index: 3})
 
   }
