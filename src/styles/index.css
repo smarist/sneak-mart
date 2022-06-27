@@ -6,7 +6,6 @@ header {
 
 nav {
   width: 100%;
-  border: 2px solid green;
 }
 
 li {
@@ -26,7 +25,6 @@ li {
   top: 80px;
   left: 35px;
   justify-content: center;
-  border: 2px solid red;
   width: 50%;
 }
 
@@ -35,14 +33,12 @@ li {
   flex-direction: row;
   justify-content: space-between;
   flex-basis: 10%;
-  border: 2px solid red;
   margin: 0;
   margin-right: auto;
 }
 .cart-avatar li {
   display: flex;
   flex-direction: row;
-  border: 2px solid red;
   align-self: center;
   justify-items: center;
   justify-content: center;
@@ -113,7 +109,6 @@ ul {
 }
 main {
   width: 100%;
-  border: 2px solid red;
   margin: 0 auto;
   margin-left: 0;
 }
@@ -140,7 +135,6 @@ main section p {
 .main1 {
   width: 100%;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 .main2 {
@@ -205,6 +199,7 @@ main section p {
 .cart-btn {
   color: white;
   border-radius: 5px;
+  margin-bottom: 3rem;
 }
 
 .cart-img {
@@ -213,13 +208,24 @@ main section p {
 }
 
 @media screen and (max-width: 959px) {
+  .main {
+    margin-bottom: 1rem;
+  }
+
   .prev-price {
     color: grey;
     align-self: center;
   }
 
+  .buttons {
+    color: black;
+  }
+
+  .qty-btn, .cart-btn {
+    padding: 0.7rem;
+  }
+
   .cart-btn {
-    padding: 0.3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -228,6 +234,10 @@ main section p {
   .cart-txt {
     margin-top: 0.2em;
     margin-left: 0.3rem;
+  }
+
+  .minus {
+    margin-bottom: 0.27rem;
   }
 }
 @media screen and (min-width: 959px) {
@@ -442,7 +452,6 @@ button {
 
 body {
   width: 100%;
-  border: 2px solid red;
   margin: 0 auto;
   overflow-x: hidden;
 }

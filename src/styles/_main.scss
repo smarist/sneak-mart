@@ -4,7 +4,6 @@
 
 main{
     width: 100%;
-    border: 2px solid red;
     margin: 0 auto;
     margin-left: 0;
 
@@ -33,7 +32,6 @@ main{
 .main1{
     width: 100%;
     margin: 0 auto;
-    border: 2px solid red;
 }
 
 .main2{
@@ -96,6 +94,8 @@ main{
 .cart-btn{
     color: white;
     border-radius: 5px;
+    margin-bottom: 3rem;
+
 }
 
 .cart-img{
@@ -106,13 +106,23 @@ main{
 
 
 @media screen and (max-width: 959px) {
+    .main{
+        margin-bottom: 1rem;
+    }
     .prev-price{
         color: grey;
         align-self: center;
     }
 
+    .buttons{
+        color: black;
+    }
+
+    .qty-btn, .cart-btn{
+        padding: 0.7rem;
+    }
+
     .cart-btn{
-        padding: 0.3rem;
         @include flex(row);
         justify-content: center;
     }
@@ -120,6 +130,10 @@ main{
     .cart-txt{
         margin-top: 0.2em;
         margin-left: 0.3rem;
+    }
+
+    .minus{
+        margin-bottom: 0.27rem;
     }
 }
 

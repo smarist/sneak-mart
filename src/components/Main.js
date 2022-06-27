@@ -25,7 +25,7 @@ export default function Main() {
             
             <div className='buttons'>
                 <button className='qty-btn'>
-                    <span><img src={minus} alt="minus"></img></span>
+                    <span><img src={minus} alt="minus" className='minus'></img></span>
                     <span>0</span>
                     <span><img src={plus} alt="plus" className='plus'></img></span>
                 </button>

@@ -10,7 +10,6 @@ header{
 
 nav{
     width: 100%;
-    border: 2px solid green;
 }
 
 li{
@@ -31,7 +30,6 @@ li{
     top: 80px;
     left: 35px;
     justify-content: center;
-    border:2px solid red;
     width: 50%;
 }
 
@@ -39,13 +37,11 @@ li{
     @include flex(row);
     justify-content: space-between;
     flex-basis: 10%;
-    border:2px solid red;
     margin: 0;
     margin-right: auto;
 
     li{
         @include flex(row);
-        border:2px solid red;
         align-self: center;
         justify-items: center;
         justify-content: center;
